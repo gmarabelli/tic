@@ -1,0 +1,89 @@
+@font-face{
+	src: "Sono.woff2";
+	font-family: "Sono";
+}
+
+html{
+	scroll-behavior: smooth;
+	background: #fff;
+	font-family: "Sono", monospace;
+	line-height: 1.6rem;
+}
+
+body{
+	margin: 3vw;
+	border: 0.7vw solid #000;
+	border-radius: 2rem;
+	padding: 3vw;
+	background: #dfd;
+}
+
+h1{
+	text-align: center;
+}
+
+ol#main li::marker{
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+dl{
+	margin: 2rem 0;
+	border: 0.2rem solid #000;
+	border-radius: 2rem;
+	padding: 0 2rem 2rem;
+	background: #ffc
+}
+
+dt{
+	margin-top: 2rem;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+img,
+div.scroll{
+	display: block;
+	margin: auto;
+	border-radius: 2rem;
+	max-width: calc(100vw - 3rem - 13.4vw);
+}
+
+img.mid{
+	width: 30rem;
+}
+img.big{
+	width: 60rem;
+}
+
+div.scroll{
+	overflow-x: scroll;
+}
+
+.scroll img{
+	max-width: none;
+}
+
+math.block{
+	display: block;
+	margin: auto;
+	border-radius: 1rem;
+	padding: 1rem;
+	width: min-content;
+	background: #fff;
+	font-size: 3rem;
+	text-align: center;
+}
+
+sup.note::before{
+	content: "[";
+}
+
+sup.note::after{
+	content: "]";
+}
+
+#notes li{
+	font-size: 0.6rem;
+	line-height: 1rem;
+}

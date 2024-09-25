@@ -2,33 +2,163 @@
 <html>
 	<head>
 		<title>Fondamenti dell'Informatica</title>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<h1>Fondamenti dell'Informatica</h1>
-		<h2>Concetti fondamentali</h2>
-		<dl>
-			<dt>Informatica</dt>
-			<dd>Scienza che studia il trattamento automatico dell'informazione</dd>
-			<dt>Trattamento</dt>
-			<dd>Possibilità di memorizzare, elaborare o comunicare informazione</dd>
-			<dt>Informazione</dt>
-			<dd>Ciò che può essere memorizzato, elaborato o comunicato</dd>
-			<dt>Dato</dt>
-			<dd>Informazione priva di contesto</dd>
-			<dt>Digitale</dt>
-			<dd>Che utilizza un numero finito di simboli</dd>
-			<dt>Analogico</dt>
-			<dd>Che utilizza un numero infinito di simboli</dd>
-			<dt>bit</dt>
-			<dd>La più piccola quantità di informazione</dd>
-			<dt>Nibble</dt>
-			<dd>Sequenza di 4 bit</dd>
-			<dt>Byte</dt>
-			<dd>Sequenza di 8 bit</dd>
-			<dt>Hertz</dt>
-			<dd>Unità di misura della frequenza, indicante il numero di volte che un certo evento si ripete in 1 secondo</dd>
-		</dl>
-		<h2>Modello di Sistema Informatico</h2>
-		<h2>Unità di Misura</h2>
+		<ol id="main">
+			<li>
+				<h2>Concetti fondamentali</h2>
+				<p>
+				Al giorno d'oggi, ogni giorno abbiamo a che fare con l'informatica: cellulari, computer e router Wi-Fi, ma anche antenne telefoniche, server web e persino le comunicazioni satellitari o con sonde extraplanetarie, fanno tutte uso dell'informatica. Queste tecnologie vengono definite <b>TIC</b>:
+				</p>
+				<dl>
+					<dt>TIC</dt>
+					<dd><b>T</b>ecnologie dell'<b>I</b>nformazione e della <b>C</b>omunicazione</dd>
+				</dl>
+				<p>
+					Esse comprendono tutte quelle tecnologie che permettono di elaborare informazioni o di comunicarle agli altri. Si tratta soprattutto di tecnologie elettroniche, per la loro praticità nella vita di tutti i giorni (immaginatevi dover usare un cellulare che per funzionare deve far girare un volano o che viene attivato solo con il calore..).
+				</p>
+				<p>
+					Ma l'informatica è molto di più di queste tecnologie, per quanto avanzate, essa è anzitutto una scienza:
+				</p>
+				<dl>
+					<dt>Informatica</dt>
+					<dd>La scienza che studia il trattamento automatico dell'informazione</dd>
+				</dl>
+				<p>
+					Sviscerando questa definizione di informatica possiamo dare un significato a ciascun termine, per ottenere un'idea più chiara.
+				</p>
+				<dl>
+					<dt>Trattamento</dt>
+					<dd>Possibilità di memorizzare, elaborare o comunicare informazione</dd>
+					<dt>Automatico</dt>
+					<dd>Che non richiede interventi esterni per compiere il proprio lavoro</dd>
+					<dt>Informazione</dt>
+					<dd>Ciò che può essere memorizzato, elaborato o comunicato</dd>
+				</dl>
+				<p>
+				L'informatica è dunque la <b>scienza che studia come sia possibile memorizzare, elaborare o comunicare informazione senza interventi esterni al sistema</b>. Abbiamo quindi individuato un concetto fondamentale dell'informatica, ovvero il <strong>sistema informatico</strong>: un'entità che tratta informazioni in modo autonomo. Per ciascuna delle azioni realizzate da un sistema informatico è necessaria una o più componenti specifiche per ciascuna azione: per poter memorizzare le informazioni serve una <b>memoria</b>, per elaborarle un <b>processore</b>, mentre per comunicarle un'<b>interfaccia</b>. Riassumendo il concetto di sistema informatico si ottiene questo schema approssimativo:
+				</p>
+				<img src="sistema-informatico.svg" class="mid">
+				<p>
+					All'interno di un sistema informatico e tra sistemi informatici vengono quindi trattate informazioni secondo le logiche in esso operanti. A basso livello, però, ciascuna informazione è trattata al pari di ogni altra: ad esempio se al processore viene detto di fare la differenza tra due numeri, non importa se essi siano quantità di merci in magazzino, prezzi o date. Le informazioni, per essere trattate in questo modo devono perciò essere estratte dal loro contesto, che altrimenti richiederebbe un sistema di elaborazione, memorizzazione o comunicazione dedicato a ciascun contesto considerato. Nei sistemi informatici, infatti, non parliamo compiutamente di informazioni, ma di dati:
+				</p>
+				<dl>
+					<dt>Dato</dt>
+					<dd>Informazione priva di contesto</dd>
+				</dl>
+				<p>
+					Per poter rappresentare un dato è necessario utilizzare simboli, siano essi caratteri di testo, segni grafici, colori o impulsi elettrici. In base alla loro cardinalità, ovvero quanti sono i simboli disponibili, è possibile distinguere rappresentazioni digitali (<i>digit</i> - dall'inglese "cifra") o analogiche:
+				</p>
+				<dl>
+					<dt>Digitale</dt>
+					<dd>Che utilizza un numero finito di simboli</dd>
+					<dt>Analogico</dt>
+					<dd>Che utilizza un numero infinito di simboli</dd>
+				</dl>
+				<p>
+					Questi aggettivi non riguardano solo i metodi di rappresentazione delle informazioni, ma anche gli apparati coinvolti e lo stesso sistema di simboli utilizzati. Si pensi all'alfabeto italiano: per passare dalla 'P' alla 'B' devo disegnare un tratto in più, ma mentre lo disegno creerò caratteri simili alla 'R'; altri caratteri della sequenza non potranno però avere un valore definito all'interno dell'alfabeto, creando quindi un vuoto di simboli tra i tre caratteri coinvolti, che non corrisponderanno ad alcuna lettera italiana: l'alfabeto italiano è quindi digitale.
+				</p>
+				<p>
+					Affinché l'informazione possa essere trattata in maniera coerente ad ogni esecuzione è importante che essa sia codificata digitalmente; diversamente ogni trattamento potrebbe sottoporre l'informazione ad errore, risultando comunqeu ancora compatibile con la codifica utilizzata.	Nel caso specifico l'informatica considera principalmente l'utilizzo della <strong>codifica digitale binaria</strong>: è molto semplice rappresentare due soli stati di potenziale elettrico, mentre fisicamente più complesso creare sistemi che gestiscano molteplici stati.
+				</p>
+			</li>
+			<li>
+				<h2>Unità di Misura</h2>
+				<p>
+					Considerando un'informazione complessa è possibile vederla come composta di parti: questo stesso testo è composto di paragrafi, a loro volta realizzati unendo diverse frasi, parole e lettere. Qualunque informazione può essere ridotta in unità sempre più piccole fino ad un certo limite: per poter avere un contenuto un'informazione deve distinguere almeno tra due casi: distinguere meno casi vuol dire non avere informazioni, perchè non consideriamo neanche la possibilità di casi differenti da quello osservato. Questa quantità di informazione è il bit (abbreviazione di <i>binary digit</i>, ovvero cifra binaria):
+				</p>
+				<dl>
+					<dt>bit (b)</dt>
+					<dd>La più piccola quantità di informazione, che può distinguere tra due casi</dd>
+				</dl>
+				<p>
+					Sequenziando più bit tra loro è possibile distinguere più casi: con 1 bit è possibile distinguere fino a 2 casi (2<sup>1</sup>), mentre con 2 bit si possono distinguere fino a 4 casi differenti (2<sup>2</sup>). Questo fatto vale in generale per n bit, mediante i quali è possibile scrivere fino a 2<sup>n</sup> combinazioni. Se è necessario codificare un simbolo all'interno di un certo alfabeto è possibile farlo utilizzando più bit: in particolare userò abbastanza bit da superare, con il rispettivo numero di casi, il numero di simboli dell'alfabeto da codificare. Ad esempio per codificare l'alfabeto italiano (21 caratteri) è possibile usare 5 bit per ogni carattere, arrivando ad avere 32 combinazioni totali (2<sup>5</sup>); quattro bit non sarebbero sufficienti, poiché distinguono solo fino a 16 casi (2<sup>4</sup>).
+				</p>
+				<p>
+					Tra le sequenze di bit, due dimensioni sono particolarmente rilevanti in informatica, ovvero sequenze di 4 e 8 bit:
+				</p>
+				<dl>
+					<dt>Nibble</dt>
+					<dd>Sequenza di 4 bit</dd>
+					<dt>Byte (B)</dt>
+					<dd>Sequenza di 8 bit</dd>
+				</dl>
+				<p>
+					Dei due quello in assoluto più conosciuto è il Byte, particolarmente comodo per le codifiche di caratteri: spesso ogni carattere di un testo occupa un Byte di informazione. Il Nibble è meno noto fuori dall'ambito informatico, mentre all'interno è particolarmente rilevante, in particolare per la sua associazione con il sistema di numerazione esadecimale (2<sup>4</sup> = 16) e quindi la possibilità di scrivere e leggere dati comodamente ragionando ad un livello molto vicino al binario, senza preoccuparsi del fatto che corrispondano a caratteri stampabili o meno.
+				</p>
+				<p>
+					In informatica si parla spesso di dimensione di una memoria, di un file o di una trasmissione: esse vengono misurate in Byte o in bit, secondo la situazione.
+				</p>
+				<p>
+					Un'altra grandezza importante in informatica è la <strong>frequenza</strong>. Diverse componenti dei sistemi informatici sono realizzate mediante fenomeni ripetuti ad intervalli regolari, siano essi fluttuazioni nel campo elettromagnetico, frame sullo schermo o impulsi elettrici all'interno del processore. All'interno di un computer troviamo infatti diversi fenomeni periodici: il clock della CPU, la presentazione a schermo dei frame, le oscillazioni presenti nei sistemi di trasmissione..
+				</p>
+				<p>
+					Anche la frequenza prevede la sua unità di misura:
+				</p>
+				<dl>
+					<dt>Hertz (Hz)</dt>
+					<dd>Unità di misura della frequenza, con cui si indica il numero di volte che un certo evento si ripete in 1 secondo</dd>
+				</dl>
+				<p>
+					Ad esempio una quantità di 4 Hz riferita alla rotazione della ruota di una bicicletta indica quindi che essa compie 4 rotazioni ogni secondo, quindi 8 in due secondi e così via.. Un altro esempio, più informatico: considerando uno schermo da <i>120 fps</i> si intende uno schermo con un refresh rate di 120 Hz, ovvero capace di far vedere 120 immagini ogni secondo. 
+				</p>
+				<p>
+					È possibile anche combinare queste grandezze misurabili tra di loro o con altre, formandone nuove. Per esempio una trasmissione di informazioni corrisponde al passaggio di una certa quantità di informazioni tra due sistemi informatici in un certo lasso di tempo. Per misurarne la velocità possiamo considerare il rapporto delle due quantità indicate:
+				</p>
+				<math class="block">
+					<mrow>
+						<mi>v</mi>
+						<mo>=</mo>
+						<mfrac>
+							<mi>I</mi>
+							<mi>t</mi>
+						</mfrac>
+					</mrow>
+				</math>
+				<p>
+					Dove <math><mi>v</mi></math> indica la velocità di trasmissione, mentre <math><mi>I</mi></math> e <math><mi>t</mi></math> indicano rispettivamente la quantità di informazione e il tempo necessario all'operazione. 
+				</p>
+				<p>
+					Si ottiene quindi anche la corrispondente unità composta: bit/secondo (b/s), ovvero è possibile misurare quanta informazione viene trasmessa ogni secondo. Grazie a questa unità è possibile quantificare questo aspetto, in relazione a quello dell'informazione e a quello temporale.
+				</p>
+			</li>
+			<li>
+				<h2>Multipli delle unità di misura</h2>
+				<p>
+					Solitamente non viene utilizzata l'unità di misura nel suo formato base, ma si utilizzano multipli (o sottomultipli) in modo da rendere più confortavole la comunicazione della misura. Sulle pubblicità dei computer non si trova infatti "<i>[Clock della] CPU da 3700000000 Hz</i>", ma trovate <i>3.7 GHz</i>, mentre le memorie  sono espresse in GB invece che direttamente in Byte o in bit.
+				</p>
+				<p>
+					Per ciascuna unità di misura si possono descrivere delle scale di multipli, solitamente considerando multipli secondo un rapporto di 1000 oppure, nel caso dei Byte, di 1024. Questa scelta per il caso del Byte è dovuta alla tradizionale preferenza di utilizzare le potenze di 2 in informatica, in particolare nei sistemi di gestione della memoria.<a href="#notes"><sup class="note">1</sup></a> I prefissi utilizzati sono i seguenti:
+					<ul>
+						<li><b>Kilo</b>- (<b>K</b>), costituito da 1000 o 1024 unità</li>
+						<li><b>Mega</b>- (<b>M</b>), costituito da 1000 o 1024 Kilo-unità</li>
+						<li><b>Giga</b>- (<b>G</b>), costituito da 1000 o 1024 Mega-unità</li>
+						<li><b>Tera</b>- (<b>T</b>), costituito da 1000 o 1024 Giga-unità</li>
+						<li><b>Peta</b>- (<b>P</b>), costituito da 1000 o 1024 Tera-unità</li>
+						<li><b>Hexa</b>- (<b>E</b>), costituito da 1000 o 1024 Peta-unità</li>
+					</ul>
+					Complessivamente è possibile tracciare il seguente schema per le unità fondamentali dell'informatica, dove ogni freccia rappresenta il passaggio da un'unità più piccola ad una più grande, secondo il fattore moltiplicativo indicato:
+				</p>
+				<div class="scroll">
+					<img src="multipli-unita-di-misura.svg" class="big scroll">
+				</div>
+				<p>
+					Per convertire tra le varie unità di misura, entro la stessa scala è necessario <b>dividere</b> procedendo verso destra e <b>moltiplicare</b> procedendo verso sinistra, sempre secondo il fattore di conversione indicato: nel primo caso si passa da unità più piccole a più grandi e quindi ce ne sono meno, viceversa ci sono più unità e quindi si moltiplica. Nel caso della doppia scala bit-Byte è possibile anche passare da una all'altra scendendo fino al bit (moltiplicando) e poi risalendo fino al multiplo desiderato (dividendo); non è possibile prendere scorciatoie, a meno di approssimare.
+				</p>
+				<p>
+				La scelta di 1024 come fattore per i multipli del Byte, pur semplificando la gestione della memoria, rende infatti più difficile effettuare rapidamente la conversione, a meno di mantenere il numero come potenza di 2 o, ovviamente, chiedere direttamente ad un computer.. È possibile però <b>approssimare</b> il fattore moltiplicativo a 1000, e ottenere un risultato vicino a quello reale utilizzando però solo moltiplicazioni o divisioni per 10 (quindi semplici spostamenti della virgola). Tranne il passaggio da bit a Byte o viceversa, per il quale conviene mantenere il rapporto esatto (8), i passaggi tra multipli del Byte assumono fattore approssimato 1000 e si ricava immediatamente che si può effettuare facilmente conversioni approssimate tra i multipli del bit e i corrispondenti multipli del Byte secondo un fattore di 8, in quanto le divisioni e moltiplicazioni per 1000 si elidono a vicenda.
+				</p>
+				<p>
+					Questo approccio aiuta molto ad approssimare i tempi di trasmissione, poiché spesso le dimensioni dei file sono fornite in multipli del Byte, mentre il rate di trasmissione è indicato in bit/s.
+				</p>
+			</li>
+		</ol>
+		<ol id="notes">
+			<li>
+				Sia per i bit, sia per i Byte sono disponibili due scale: quella decimale e quella binaria. Secondo lo <a href="https://it.wikipedia.org/wiki/IEEE_1541">standard IEEE 1541</a> è previsto l'inserimento di una <i>i</i> minuscola per indicare l'utilizzo della scala binaria (es. <i>KiB</i>) ma, nonostante siano passati più di 20 anni, ad oggi lo standard non ha avuto l'adesione auspicata e quasi ovunque sono ancora utilizzati i prefissi decimali come binari per il Byte.
+			</li>
+		</ol>
 	</body>
 </html>

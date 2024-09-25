@@ -1,0 +1,69 @@
+<svg version="1.1"
+	width="420" height="500"
+	xmlns="http://www.w3.org/2000/svg">
+	<style>
+		@font-face{
+			src: "Sono.woff2";
+			font-family: "Sono";
+		}
+
+		svg{
+			font-family: "Sono", monospace;
+			background: #fff;
+		}
+	</style>
+
+	<g id="system">
+		<rect x="40" y="80" width="340" height="380" fill="#fff" stroke="#000" stroke-width="8"/>
+		<g id="interface">
+			<rect x="70" y="120" width="80" height="50" fill="#fff" stroke="#008" stroke-width="5"/>
+			<line x1="110" y1="170" x2="110" y2="190" stroke="#008" stroke-width="5"/>
+			<line x1="90" y1="190" x2="130" y2="190" stroke="#008" stroke-width="5"/>
+			<text x="190" y="155" font-size="30" text-anchor="left">Interface</text>
+		</g>
+		<g id="processor">
+			<rect x="80" y="240" width="60" height="60" fill="#fff" stroke="#800" stroke-width="5"/>
+			<rect x="90" y="250" width="40" height="40" fill="#800"/>
+			<line x1="60" y1="250" x2="80" y2="250" stroke="#800" stroke-width="5"/>
+			<line x1="60" y1="270" x2="80" y2="270" stroke="#800" stroke-width="5"/>
+			<line x1="60" y1="290" x2="80" y2="290" stroke="#800" stroke-width="5"/>
+			<line x1="90" y1="220" x2="90" y2="240" stroke="#800" stroke-width="5"/>
+			<line x1="110" y1="220" x2="110" y2="240" stroke="#800" stroke-width="5"/>
+			<line x1="130" y1="220" x2="130" y2="240" stroke="#800" stroke-width="5"/>
+			<line x1="140" y1="250" x2="160" y2="250" stroke="#800" stroke-width="5"/>
+			<line x1="140" y1="270" x2="160" y2="270" stroke="#800" stroke-width="5"/>
+			<line x1="140" y1="290" x2="160" y2="290" stroke="#800" stroke-width="5"/>
+			<line x1="90" y1="300" x2="90" y2="320" stroke="#800" stroke-width="5"/>
+			<line x1="110" y1="300" x2="110" y2="320" stroke="#800" stroke-width="5"/>
+			<line x1="130" y1="300" x2="130" y2="320" stroke="#800" stroke-width="5"/>
+			<text x="190" y="280" font-size="30" text-anchor="left">Processor</text>
+		</g>
+		<g id="memory">
+			<ellipse cx="110" cy="430" rx="40" ry="10" fill="#080"/>
+			<rect x="70" y="370" width="80" height="60" fill="#080"/>
+			<ellipse cx="110" cy="413" rx="40" ry="10" fill="#fff"/>
+			<rect x="70" y="370" width="80" height="43" fill="#fff"/>
+			<ellipse cx="110" cy="410" rx="40" ry="10" fill="#080"/>
+			<rect x="70" y="370" width="80" height="40" fill="#080"/>
+			<ellipse cx="110" cy="393" rx="40" ry="10" fill="#fff"/>
+			<rect x="70" y="370" width="80" height="23" fill="#fff"/>
+			<ellipse cx="110" cy="390" rx="40" ry="10" fill="#080"/>
+			<rect x="70" y="370" width="80" height="20" fill="#080"/>
+			<ellipse cx="110" cy="373" rx="40" ry="10" fill="#fff"/>
+			<rect x="70" y="370" width="80" height="3" fill="#fff"/>
+			<ellipse cx="110" cy="370" rx="40" ry="10" fill="#080"/>
+			<text x="190" y="405" font-size="30" text-anchor="left">Memory</text>
+		</g>
+	</g>
+	<g id="information">
+		<line x1="200" y1="30" x2="200" y2="115" stroke="#000" stroke-width="5"/>
+		<polygon points="200 20 185 50 215 50" fill="#000"/>
+		<polygon points="200 125 185 95 215 95" fill="#000"/>
+		<line x1="200" y1="175" x2="200" y2="240" stroke="#000" stroke-width="5"/>
+		<polygon points="200 165 185 195 215 195" fill="#000"/>
+		<polygon points="200 250 185 220 215 220" fill="#000"/>
+		<line x1="200" y1="300" x2="200" y2="365" stroke="#000" stroke-width="5"/>
+		<polygon points="200 290 185 320 215 320" fill="#000"/>
+		<polygon points="200 375 185 345 215 345" fill="#000"/>
+	</g>
+</svg>
