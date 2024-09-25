@@ -16,6 +16,8 @@ body{
 	border-radius: 2rem;
 	padding: 3vw;
 	background: #dfd;
+
+	--max-width: calc(88vw - 3.6rem);
 }
 
 h1{
@@ -41,12 +43,11 @@ dt{
 	text-decoration: underline;
 }
 
-img,
-div.scroll{
+img{
 	display: block;
 	margin: auto;
 	border-radius: 2rem;
-	max-width: calc(100vw - 3.6rem - 12vw);
+	max-width: var(--max-width);
 }
 
 img.mid{
@@ -57,7 +58,9 @@ img.big{
 }
 
 div.scroll{
+	margin: auto;
 	overflow-x: scroll;
+	max-width: var(--max-width);
 }
 
 .scroll img{
