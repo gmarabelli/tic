@@ -12,7 +12,7 @@ html{
 
 body{
 	margin: 3vw;
-	border: 0.7vw solid #000;
+	border: 0.3rem solid #000;
 	border-radius: 2rem;
 	padding: 3vw;
 	background: #dfd;
@@ -46,7 +46,7 @@ div.scroll{
 	display: block;
 	margin: auto;
 	border-radius: 2rem;
-	max-width: calc(100vw - 3rem - 13.4vw);
+	max-width: calc(100vw - 3.6rem - 12vw);
 }
 
 img.mid{
