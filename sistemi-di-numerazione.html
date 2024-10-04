@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sistemi di numerazione</title>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>Sistemi di Numerazione</h1>
+		<ol id="main">
+			<li>
+				<h2>Un po' di storia..</h2>
+				<p>
+					Fin dall'antichità, l'uomo ha cercato metodi per rappresentare le quantità numeriche in modo efficace. Ogni civiltà ha sviluppato il suo sistema di numerazione per facilitare il conteggio, la registrazione dei dati e il commercio. Questa diversità di sistemi di numerazione è il risultato delle diverse culture e tradizioni presenti in tutto il mondo.
+				</p>
+				<p>
+					Si è passati quindi da segni sulle rocce o tacche sui bastoni, a sistemi più strutturati, dove diversi simboli indicavano quantità differenti, combinati talvolta per somma o sottrazione, come nel sistema di numerazione romano.
+				</p>
+				<p>
+I sistemi di numerazione principalmente utilizzati attualmente sono sistemi di numerazione posizionali.
+				</p>
+				<h2>Sistemi di numerazione posizionali</h2>
+				<p>
+					In questi sistemi vengono usati dei simboli, dette cifre, che hanno un valore intrinseco e variano il loro peso in funzione della posizione che occupano all’interno del numero.
+				</p>
+				<p>
+					Esempio - sistema di numerazione posizionale decimale: 
+					736 = 7·100 + 3·10 + 6·1 = 7·102 + 3·101 + 6·100
+					I pesi delle cifre sono le potenze di 10 corrispondenti alla posizione delle cifre stesse, a partire da destra e iniziando con 0: 6 in posizione 0, 3 in posizione 1 e 7 in posizione 2.
+				</p>
+				<p>
+					Nell’esempio è evidente un valore, detto base, le cui potenze sono i pesi delle cifre del sistema considerato. Per il sistema decimale è 10, ma è sufficiente considerare un’altra base per ottenere un diverso sistema di numerazione.
+				</p>
+				<p>
+					La base di un sistema di numerazione posizionale corrisponde anche al numero di cifre utilizzate nel rispettivo sistema di numerazione. La base è solitamente indicata a pedice della rappresentazione del numero (es: 1100102); può anche essere posta tra parentesi (es: 110010 (2) ) questa notazione può essere omessa qualora sia chiaro il sistema di numerazione utilizzato.
+				</p>
+				<p>
+					Di questi sistemi, ci interessano principalmente:
+				</p>
+				<ul>
+					<li>il sistema decimale (base 10), utilizzato quotidianamente da ciascuno di noi;</li>
+					<li>il sistema binario (base 2), rappresentabile nei circuiti digitali;</li>
+					<li>il sistema ottale (base 8) ed esadecimale (base 16), utilizzati perlopiù per rappresentare sequenze binarie lunghe semplificandone la lettura.</li>
+				</ul>
+			</li>
+			<li>
+				<h2>Sistema di numerazione posizionale binario</h2>
+				<p>
+					Il sistema binario è direttamente correlato all’informatica per la sua presenza all’interno dei circuiti elettronici: per una semplicità implementativa essi possono contenere, in ogni maglia, fino a due soli livelli di potenziale elettrico. È dunque risultata naturale la centralità del sistema di numerazione posizionale binario.
+				</p>
+				<p>
+					Esso ha base 2, ovvero le cifre disponibili sono solo due (0 e 1), nonché esse assumono dei pesi secondo le potenze di due.
+				</p>
+				<p>
+					È possibile convertire un numero tra il sistema di numerazione binario e decimale in differenti modi. Ne analizziamo in seguito quattro metodi, rispettivamente due per ogni verso di conversione.
+				</p>
+				<p>
+					Utilizzando la definizione stessa dei sistemi posizionali otteniamo il primo metodo:
+				</p>
+				<p>
+					Esempio - conversione da sistema binario a decimale: 
+					1100102	=	1·25	+	1·24	+	0·23	+	0·22	+	1·21	+	0·20
+							=	32	+	16	+	0	+	0	+	2	+	0	= 5010
+				</p>
+				<p>
+					Facendo un po’ di attenzione, si nota che stiamo semplicemente facendo la somma delle potenze di due corrispondenti alle posizioni dove la cifra è 1. Da questa osservazione si ricava un metodo per la conversione inversa, utile soprattutto quando il numero è componibile mediante poche potenze di due:
+Esempio - conversione da sistema decimale a binario:
+				</p>
+				<p>
+La conversione si effettua dapprima scomponendo il numero come somma di potenze di due, individuandone di volta in volta la massima potenza che può contenere, poi considerando il numero binario avente cifra 1 solo nelle posizioni indicate dagli esponenti delle potenze ottenute dalla scomposizione
+				</p>
+				<p>
+					2610	=	16	+	10
+						=	16	+	8	+	2
+						=	24	+	23	+	21
+						=	1·24	+	1·23	+	0·22	+	1·21	+	0·20		= 110102
+				</p>
+				<p>
+					Questi metodi sono molto affini alla definizione data, ma non sempre sono efficaci, soprattutto se il numero è grande o ha molte cifre 1 nella scrittura binaria. È possibile però sviluppare dei metodi basati su prodotti o divisioni che considerano la base scelta. Essi si basano sul principio che ogni numero può essere scritto come prodotto iterato secondo la base selezionata:
+				</p>
+				<p>
+					101102 = 1·24 + 0·23 + 1·22 + 1·21 + 0·20 = ((((1)·2 + 0)·2 + 1)·2 + 1)·2 + 0
+				</p>
+				<p>
+					Questo fatto può essere utilizzato per le conversioni in entrambi i sensi, secondo gli esempi che seguono:
+				</p>
+				<p>
+					Esempio - conversione da sistema binario a decimale:
+					La conversione si effettua disponendo le cifre del numero binario dall’alto in basso, per poi procedere, a partire da 0 a raddoppiare il numero di volta in volta ottenuto e aggiungervi la cifra binaria successiva; il numero finale è la rappresentazione decimale desiderata
+					Consideriamo il numero 1010112:
+					2
+					0
+					
+					
+					1
+					1
+					= 0·2 + 1
+					0
+					2
+					= 1·2 + 0
+					1
+					5
+					= 2·2 + 1
+					0
+					10
+					= 5·2 + 0
+					1
+					21
+					= 10·2 + 1
+					1
+					43
+					= 21·2 + 1
+					
+					La sua conversione in decimale è 4310.
+				</p>
+				<p>
+					Esempio - conversione da sistema decimale a binario:
+					La conversione si effettua iterando sul numero la divisione intera secondo la base, scrivendo quozienti e resto nella riga successiva fino ad ottenere quoziente 0; alla fine si considera la sequenza dei resti come cifre del numero convertito, lette in senso inverso
+					Consideriamo il numero 5810:
+					58
+					2
+
+
+					29
+					0
+					= 58/2
+					14
+					1
+					= 29/2
+					7
+					0
+					= 14/2
+					3
+					1
+					= 7/2
+					1
+					1
+					= 3/2
+					0
+					1
+					= 1/2
+
+					La sua conversione in binario è 1110102, ottenuto leggendo i resti delle divisioni successive dal basso in alto.
+					Spiegazione: il numero 58 diviso per 2 fa 29 con resto 0, risultati scritti nella seconda
+riga; il numero 29 diviso per 2 fa 14 con resto 1, risultati che scrivo nella seconda riga e così via..
+				</p>
+			</li>
+			<li>
+				<h2>Sistemi di numerazione posizionale ottale ed esadecimale</h2>
+				<p>
+					Il sistema binario è molto importante per l’informatica digitale, ma avendo solo due simboli può essere facile perdersi quando bisogna gestire una considerevole dose di informazione. Per rendersene conto è sufficiente provare a leggere la seguente sequenza:
+				</p>
+				<p>
+					00100010101111111111110101011110101101110000010110011010101010101000000000000110
+				</p>
+				<p>
+					È evidente che, soprattutto dove ci sono molte ripetizioni, sia complicato. A questo scopo sono stati pensati i sistemi ottale ed esadecimale. Essi permettono al programmatore di leggere stralci di informazione binaria in maniera più semplice, perché più vicina al nostro sistema decimale.
+				</p>
+				<p>
+					Essi hanno rispettivamente base 8 e 16. Per il sistema ottale si utilizzano le cifre decimali da 0 a 7 (8 cifre in totale), mentre per il sistema esadecimale si utilizzano le cifre decimali da 0 a 9 (10 cifre) più le prime lettere dell’alfabeto, dalla A alla F (altre 6 cifre, totale 16 cifre). Mentre nel sistema ottale le corrispondenze sono chiare, per il sistema esadecimale vanno precisati i valori delle nuove cifre: A vale 1010, B vale 1110, C vale 1210, D vale 1310, E vale 1410 ed F vale 1510.
+				</p>
+				<p>
+					Come per il sistema binario valgono gli stessi metodi di conversione verso il sistema decimale.
+				</p>
+				<p>
+					Esempio - conversione da sistema ottale/esadecimale a decimale: 
+						13708	=	1·83	+	3·82	+	7·81	+	0·80
+							=	1·512	+	3·64	+	7·8	+	0·1
+							=	512	+	192	+	56	+	0	= 76010
+						C3B816	=	C·163	+	3·162	+	B·161	+	8·160
+							=	12·4096	+	3·256	+	11·16	+	8·1
+							=	49152	+	768	+	176	+	8	= 5010410
+					Esempio - conversione da sistema decimale a ottale/esadecimale:
+
+						9710	=	64	+	33
+							=	64	+	32	+	1
+							=	1·82	+	4·81	+	1·80	= 1418
+						26910	=	256	+	13
+							=	1·162	+	13·160
+							=	1·162	+	0·161	+	13·160	= 10D16
+
+
+
+					Esempio - conversione da sistema binario a ottale/esadecimale:
+					Consideriamo il numero 6318:
+						8
+						0
+
+
+						6
+						6
+						= 0·8 + 6
+						3
+						51
+						= 6·8 + 3
+						1
+						409
+						= 51·8 + 1
+
+					La sua conversione in decimale è 40910.
+					Consideriamo il numero 1A416:
+						16
+						0
+
+
+						1
+						1
+						= 0·16 + 1
+						A
+						26
+						= 1·16 + 10 (A)
+						4
+						420
+						= 26·16 + 4
+
+					La sua conversione in decimale è 42010.
+					Esempio - conversione da sistema decimale a ottale/esadecimale:
+					Consideriamo il numero 17510:
+						175
+						8
+
+
+						21	
+						7
+						= 175/8
+						2
+						5
+						= 21/8
+						0
+						2
+						= 2/8
+
+					La sua conversione in ottale è 2578.
+					Consideriamo il numero 62510:
+						635
+						16
+
+
+						39
+						11 (B)
+						= 635/16
+						2
+						7
+						= 39/16
+						0
+						2
+						= 2/16
+
+					La sua conversione in esadecimale è 27B16.
+				</p>
+				<p>
+					I metodi di conversione verso il sistema decimale però non sono il punto forte del sistema ottale ed esadecimale. Come già detto questi sistemi sono stati pensati per una conversione rapida verso il sistema binario. La scelta di basi come potenze di due è stata fatta infatti perchè tutte le potenze di due possono essere raccolte mediante potenze di otto o sedici, con una minima variazione. Osserviamo ad esempio una conversione rapida di 10100102 in esadecimale:
+				</p>
+				<p>
+					1011110102	=	1·28 + 0·27 + 1·26 + 1·25 + 1·24 + 1·23 + 0·22 + 1·21 + 0·20
+						=	1·(24)2 + (0·23 + 1·22 + 1·21 + 1·20)·(24)1 + (1·23 + 0·22 + 1·21 + 0·20)·(24)0
+						=	1·162 + 7·161 + 10·160 = 17A16
+				</p>
+				<p>
+					Si nota facilmente che le cifre esadecimali corrispondono a gruppi di quattro cifre binarie (nibble). Per la conversione binario-ottale/esadecimale è sufficiente dunque associare ad ogni gruppo di tre(ottale)/quattro(esadecimale) cifre binarie una sola cifra ottale/esadecimale.
+Esempio - conversione da sistema binario a ottale/esadecimale:
+				</p>
+				<p>
+					La conversione si effettua suddividendo il numero in gruppi di tre/quattro cifre e traducendo in decimale ogni gruppo, facendo corrispondere la cifra corretta nel sistema di destinazione
+						111111010011010110101012	=	11	111	101	001	101	011	010	101
+							=	3	7	5	1	5	3	2	5	= 375153258
+						111111010011010110101012	=	111	1110	1001	1010	1101	0101
+							=	7	14	9	10	13	5
+							=	7	E	9	A	D	5	= 7E9AD516
+				</p>
+				<p>
+					Esempio - conversione da sistema binario a ottale/esadecimale:
+					La conversione si effettua convertendo ogni cifra nel gruppo di tre/quattro cifre corrispondenti e unendo le sequenze ottenute; gli zeri iniziali possono essere omessi
+						134620578	=	1	3	4	6	2	0	5	7
+							=	001	011	100	110	010	000	101	111	=	10111001100100001011112
+						25B3FC16	=	2	5	B	3	F	C
+							=	0010	0101	1011	0011	1111	1100	= 10010110110011111111002
+				</p>
+			</li>
+		</ol>
+	</body>
+</html>
