@@ -1,0 +1,40 @@
+.example{
+	margin: 2rem;
+	border: 0.2rem solid #000;
+	border-radius: 2rem;
+	padding: 0 2rem 1rem;
+	background: #cff;
+}
+
+.center{
+	margin: 1rem auto;
+	text-align: center;
+}
+
+.operation{
+	border-collapse: collapse;
+}
+
+.operation .result{
+	border: 0.1rem 0 solid #000;
+}
+
+.conversion{
+	border-collapse: collapse;
+}
+
+td{
+	min-width: 3rem;
+}
+
+.conversion td:first-child{
+	border-right: 0.15rem solid #000;
+}
+
+.conversion.toten tr:first-child td:first-child{
+	border-bottom: 0.15rem solid #000;
+}
+
+.conversion.fromten tr:first-child td:nth-child(2){
+	border-bottom: 0.15rem solid #000;
+}
