@@ -58,9 +58,12 @@ img.big{
 }
 
 div.scroll{
-	margin: auto;
+	margin: 1rem auto;
+	border-radius: 2rem;
+	padding: 1rem;
 	overflow-x: scroll;
 	max-width: var(--max-width);
+	background: #fff;
 }
 
 .scroll img{

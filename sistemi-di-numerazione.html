@@ -30,9 +30,11 @@ I sistemi di numerazione principalmente utilizzati attualmente sono sistemi di n
 					<h4>
 						Esempio - sistema di numerazione posizionale decimale:
 					</h4>
-					<p class="center">
-						736 = 7·100 + 3·10 + 6·1 = 7·10<sup>2</sup> + 3·10<sup>1</sup> + 6·10<sup>0</sup>
-					</p>
+					<div class="scroll">
+						<p class="center">
+							736 = 7·100 + 3·10 + 6·1 = 7·10<sup>2</sup> + 3·10<sup>1</sup> + 6·10<sup>0</sup>
+						</p>
+					</div>
 					<p>
 						I pesi delle cifre sono le potenze di 10 corrispondenti alla posizione delle cifre stesse, a partire da destra e iniziando con 0: 6 in posizione 0, 3 in posizione 1 e 7 in posizione 2.
 					</p>
@@ -70,42 +72,44 @@ I sistemi di numerazione principalmente utilizzati attualmente sono sistemi di n
 					<h4>
 						Esempio - conversione da sistema binario a decimale:
 					</h4>
-					<table class="center">
-						<tbody>
-							<tr>
-								<td>110010<sub>2</sub></td>
-								<td>=</td>
-								<td>1·2<sup>5</sup></td>
-								<td>+</td>
-								<td>1·2<sup>4</sup></td>
-								<td>+</td>
-								<td>0·2<sup>3</sup></td>
-								<td>+</td>
-								<td>0·2<sup>2</sup></td>
-								<td>+</td>
-								<td>1·2<sup>1</sup></td>
-								<td>+</td>
-								<td>0·2<sup>0</sup></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>=</td>
-								<td>32</td>
-								<td>+</td>
-								<td>16</td>
-								<td>+</td>
-								<td>0</td>
-								<td>+</td>
-								<td>0</td>
-								<td>+</td>
-								<td>2</td>
-								<td>+</td>
-								<td>0</td>
-								<td>=</td>
-								<td>50<sub>10</sub></td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="scroll">
+						<table class="center">
+							<tbody>
+								<tr>
+									<td>110010<sub>2</sub></td>
+									<td>=</td>
+									<td>1·2<sup>5</sup></td>
+									<td>+</td>
+									<td>1·2<sup>4</sup></td>
+									<td>+</td>
+									<td>0·2<sup>3</sup></td>
+									<td>+</td>
+									<td>0·2<sup>2</sup></td>
+									<td>+</td>
+									<td>1·2<sup>1</sup></td>
+									<td>+</td>
+									<td>0·2<sup>0</sup></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>=</td>
+									<td>32</td>
+									<td>+</td>
+									<td>16</td>
+									<td>+</td>
+									<td>0</td>
+									<td>+</td>
+									<td>0</td>
+									<td>+</td>
+									<td>2</td>
+									<td>+</td>
+									<td>0</td>
+									<td>=</td>
+									<td>50<sub>10</sub></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 				<p>
 					Facendo un po’ di attenzione, si nota che stiamo semplicemente facendo la somma delle potenze di due corrispondenti alle posizioni dove la cifra è 1. Da questa osservazione si ricava un metodo per la conversione inversa, utile soprattutto quando il numero è componibile mediante poche potenze di due:
@@ -117,74 +121,78 @@ I sistemi di numerazione principalmente utilizzati attualmente sono sistemi di n
 					<p>
 						La conversione si effettua dapprima scomponendo il numero come somma di potenze di due, individuandone di volta in volta la massima potenza che può contenere, poi considerando il numero binario avente cifra 1 solo nelle posizioni indicate dagli esponenti delle potenze ottenute dalla scomposizione:
 					</p>
-					<table class="center">
-						<tbody>
-							<tr>
-								<td>26<sub>10</sub></td>
-								<td>=</td>
-								<td>16</td>
-								<td>+</td>
-								<td>10</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>=</td>
-								<td>16</td>
-								<td>+</td>
-								<td>8</td>
-								<td>+</td>
-								<td></td>
-								<td></td>
-								<td>2</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>=</td>
-								<td>2<sup>4</sup></td>
-								<td>+</td>
-								<td>2<sup>3</sup></td>
-								<td>+</td>
-								<td></td>
-								<td></td>
-								<td>2<sup>1</sup></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>=</td>
-								<td>1·2<sup>4</sup></td>
-								<td>+</td>
-								<td>1·2<sup>3</sup></td>
-								<td>+</td>
-								<td>0·2<sup>2</sup></td>
-								<td>+</td>
-								<td>1·2<sup>1</sup></td>
-								<td>+</td>
-								<td>0·2<sup>0</sup></td>
-								<td>=</td>
-								<td>11010<sub>2</sub></td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="scroll">
+						<table class="center">
+							<tbody>
+								<tr>
+									<td>26<sub>10</sub></td>
+									<td>=</td>
+									<td>16</td>
+									<td>+</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>=</td>
+									<td>16</td>
+									<td>+</td>
+									<td>8</td>
+									<td>+</td>
+									<td></td>
+									<td></td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>=</td>
+									<td>2<sup>4</sup></td>
+									<td>+</td>
+									<td>2<sup>3</sup></td>
+									<td>+</td>
+									<td></td>
+									<td></td>
+									<td>2<sup>1</sup></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>=</td>
+									<td>1·2<sup>4</sup></td>
+									<td>+</td>
+									<td>1·2<sup>3</sup></td>
+									<td>+</td>
+									<td>0·2<sup>2</sup></td>
+									<td>+</td>
+									<td>1·2<sup>1</sup></td>
+									<td>+</td>
+									<td>0·2<sup>0</sup></td>
+									<td>=</td>
+									<td>11010<sub>2</sub></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 				<p>
 					Questi metodi sono molto affini alla definizione data, ma non sempre sono efficaci, soprattutto se il numero è grande o ha molte cifre 1 nella scrittura binaria. È possibile però sviluppare dei metodi basati su prodotti o divisioni che considerano la base scelta. Essi si basano sul principio che ogni numero può essere scritto come prodotto iterato secondo la base selezionata:
 				</p>
 				<div class="example">
 					<p></p>
-					<table class="center">
-						<tbody>
-							<tr>
-								<td>10110<sub>2</sub></td>
-								<td>=</td>
-								<td>1·2<sup>4</sup> + 0·2<sup>3</sup> + 1·2<sup>2</sup> + 1·2<sup>1</sup> + 0·2<sup>0</sup>
-							</tr>
-							<tr>
-								<td></td>
-								<td>=</td>
-								<td>((((1)·2 + 0)·2 + 1)·2 + 1)·2 + 0</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="scroll">
+						<table class="center">
+							<tbody>
+								<tr>
+									<td>10110<sub>2</sub></td>
+									<td>=</td>
+									<td>1·2<sup>4</sup> + 0·2<sup>3</sup> + 1·2<sup>2</sup> + 1·2<sup>1</sup> + 0·2<sup>0</sup>
+								</tr>
+								<tr>
+									<td></td>
+									<td>=</td>
+									<td>((((1)·2 + 0)·2 + 1)·2 + 1)·2 + 0</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 				<p>
 					Questo fatto può essere utilizzato per le conversioni in entrambi i sensi, secondo gli esempi che seguono:
@@ -196,62 +204,64 @@ I sistemi di numerazione principalmente utilizzati attualmente sono sistemi di n
 					<p>
 						La conversione si effettua disponendo le cifre del numero binario dall’alto in basso, per poi procedere, a partire da 0 a raddoppiare il numero di volta in volta ottenuto e aggiungervi la cifra binaria successiva; il numero finale è la rappresentazione decimale desiderata. Consideriamo il numero 101011<sub>2</sub>:
 					</p>
-					<table class="center conversion toten">
-						<tbody>
-							<tr>
-								<td>2</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td>1</td>
-								<td>1</td>
-								<td>=</td>
-								<td>0·2</td>
-								<td>+</td>
-								<td>1</td>
-							</tr>
-							<tr>
-								<td>0</td>
-								<td>2</td>
-								<td>=</td>
-								<td>1·2</td>
-								<td>+</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td>1 </td>
-								<td>5</td>
-								<td>=</td>
-								<td>2·2</td>
-								<td>+</td>
-								<td>1</td>
-							</tr>
-							<tr>
-								<td>0</td>
-								<td>10</td>
-								<td>=</td>
-								<td>5·2</td>
-								<td>+</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td>1</td>
-								<td>21</td>
-								<td>=</td>
-								<td>10·2</td>
-								<td>+</td>
-								<td>1</td>
-							</tr>
-							<tr>
-								<td>1</td>
-								<td>43</td>
-								<td>=</td>
-								<td>21·2</td>
-								<td>+</td>
-								<td>1</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="scroll">
+						<table class="center conversion toten">
+							<tbody>
+								<tr>
+									<td>2</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>1</td>
+									<td>=</td>
+									<td>0·2</td>
+									<td>+</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>0</td>
+									<td>2</td>
+									<td>=</td>
+									<td>1·2</td>
+									<td>+</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>1 </td>
+									<td>5</td>
+									<td>=</td>
+									<td>2·2</td>
+									<td>+</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>0</td>
+									<td>10</td>
+									<td>=</td>
+									<td>5·2</td>
+									<td>+</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>21</td>
+									<td>=</td>
+									<td>10·2</td>
+									<td>+</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>43</td>
+									<td>=</td>
+									<td>21·2</td>
+									<td>+</td>
+									<td>1</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 					<p>
 						La sua conversione in decimale è 43<sub>10</sub>.
 					</p>
@@ -263,50 +273,52 @@ I sistemi di numerazione principalmente utilizzati attualmente sono sistemi di n
 					<p>
 						La conversione si effettua iterando sul numero la divisione intera secondo la base, scrivendo quozienti e resto nella riga successiva fino ad ottenere quoziente 0; alla fine si considera la sequenza dei resti come cifre del numero convertito, lette in senso inverso. Consideriamo il numero 58<sub>10</sub>:
 					</p>
-					<table class="center conversion fromten">
-						<tbody>
-							<tr>
-								<td>58</td>
-								<td>2</td>
-							</tr>
-							<tr>
-								<td>29</td>
-								<td>0</td>
-								<td>=</td>
-								<td>58/2</td>
-							</tr>
-							<tr>
-								<td>14</td>
-								<td>1</td>
-								<td>=</td>
-								<td>29/2</td>
-							</tr>
-							<tr>
-								<td>7</td>
-								<td>0</td>
-								<td>=</td>
-								<td>14/2</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>1</td>
-								<td>=</td>
-								<td>7/2</td>
-							</tr>
-							<tr>
-								<td>1</td>
-								<td>1</td>
-								<td>=</td>
-								<td>3/2</td>
-							</tr>
-							<tr>
-								<td>0</td>
-								<td>1</td>
-								<td>=</td>
-								<td>1/2</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="scroll">
+						<table class="center conversion fromten">
+							<tbody>
+								<tr>
+									<td>58</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>29</td>
+									<td>0</td>
+									<td>=</td>
+									<td>58/2</td>
+								</tr>
+								<tr>
+									<td>14</td>
+									<td>1</td>
+									<td>=</td>
+									<td>29/2</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>0</td>
+									<td>=</td>
+									<td>14/2</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>1</td>
+									<td>=</td>
+									<td>7/2</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>1</td>
+									<td>=</td>
+									<td>3/2</td>
+								</tr>
+								<tr>
+									<td>0</td>
+									<td>1</td>
+									<td>=</td>
+									<td>1/2</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 					<p>
 						La sua conversione in binario è 111010<sub>2</sub>, ottenuto leggendo i resti delle divisioni successive dal basso in alto.
 					</p>
@@ -320,9 +332,11 @@ I sistemi di numerazione principalmente utilizzati attualmente sono sistemi di n
 				<p>
 					Il sistema binario è molto importante per l’informatica digitale, ma avendo solo due simboli può essere facile perdersi quando bisogna gestire una considerevole quantità di informazione. Per rendersene conto è sufficiente provare a leggere la seguente sequenza:
 				</p>
-				<p>
+				<div class="scroll">
+					<p>
 					00100010101111111111110101011110101101110000010110011010101010101000000000000110
-				</p>
+					</p>
+				</div>
 				<p>
 					È evidente che, soprattutto dove ci sono molte ripetizioni, sia complicato. A questo scopo sono stati pensati i sistemi ottale ed esadecimale. Essi permettono al programmatore di leggere stralci di informazione binaria in maniera più semplice, perché più vicina al nostro sistema decimale.
 				</p>
@@ -336,153 +350,161 @@ I sistemi di numerazione principalmente utilizzati attualmente sono sistemi di n
 					<h4>
 						Esempio - conversione da sistema ottale/esadecimale a decimale:
 					</h4>
-					<table class="center">
-						<tbody>
-							<tr>
-								<td>1370<sub>8</sub></td>
-								<td>=</td>
-								<td>1·8<sup>3</sup></td>
-								<td>+</td>
-								<td>3·8<sup>2</sup></td>
-								<td>+</td>
-								<td>7·8<sup>1</sup></td>
-								<td>+</td>
-								<td>0·8<sup>0</sup></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>=</td>
-								<td>1·512</td>
-								<td>+</td>
-								<td>3·64</td>
-								<td>+</td>
-								<td>7·8</td>
-								<td>+</td>
-								<td>0·1</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>=</td>
-								<td>512</td>
-								<td>+</td>
-								<td>192</td>
-								<td>+</td>
-								<td>56</td>
-								<td>+</td>
-								<td>0</td>
-								<td>=</td>
-								<td>760<sub>10</sub></td>
-							</tr>
-						</tbody>
-					</table>
-					<table class="center">
-						<tbody>
-							<tr>
-								<td>C3B8<sub>16</sub></td>
-								<td>=</td>
-								<td>C·16<sup>3</sup></td>
-								<td>+</td>
-								<td>3·16<sup>2</sup></td>
-								<td>+</td>
-								<td>B·16<sup>1</sup></td>
-								<td>+</td>
-								<td>8·16<sup>0</sup></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>=</td>
-								<td>12·4096</td>
-								<td>+</td>
-								<td>3·256</td>
-								<td>+</td>
-								<td>11·16</td>
-								<td>+</td>
-								<td>8·1</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>=</td>
-								<td>49152</td>
-								<td>+</td>
-								<td>768</td>
-								<td>+</td>
-								<td>176</td>
-								<td>+</td>
-								<td>8</td>
-								<td>=</td>
-								<td>50104<sub>10</sub></td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="scroll">
+						<table class="center">
+							<tbody>
+								<tr>
+									<td>1370<sub>8</sub></td>
+									<td>=</td>
+									<td>1·8<sup>3</sup></td>
+									<td>+</td>
+									<td>3·8<sup>2</sup></td>
+									<td>+</td>
+									<td>7·8<sup>1</sup></td>
+									<td>+</td>
+									<td>0·8<sup>0</sup></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>=</td>
+									<td>1·512</td>
+									<td>+</td>
+									<td>3·64</td>
+									<td>+</td>
+									<td>7·8</td>
+									<td>+</td>
+									<td>0·1</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>=</td>
+									<td>512</td>
+									<td>+</td>
+									<td>192</td>
+									<td>+</td>
+									<td>56</td>
+									<td>+</td>
+									<td>0</td>
+									<td>=</td>
+									<td>760<sub>10</sub></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="scroll">
+						<table class="center">
+							<tbody>
+								<tr>
+									<td>C3B8<sub>16</sub></td>
+									<td>=</td>
+									<td>C·16<sup>3</sup></td>
+									<td>+</td>
+									<td>3·16<sup>2</sup></td>
+									<td>+</td>
+									<td>B·16<sup>1</sup></td>
+									<td>+</td>
+									<td>8·16<sup>0</sup></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>=</td>
+									<td>12·4096</td>
+									<td>+</td>
+									<td>3·256</td>
+									<td>+</td>
+									<td>11·16</td>
+									<td>+</td>
+									<td>8·1</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>=</td>
+									<td>49152</td>
+									<td>+</td>
+									<td>768</td>
+									<td>+</td>
+									<td>176</td>
+									<td>+</td>
+									<td>8</td>
+									<td>=</td>
+									<td>50104<sub>10</sub></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 				<div class="example">
 					<h4>
 						Esempio - conversione da sistema decimale a ottale/esadecimale:
 					</h4>
-					<table class="center">
-						<tbody>
-							<tr>
-								<td>97<sub>10</sub></td>
-								<td>=</td>
-								<td>64</td>
-								<td>+</td>
-								<td>33</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>=</td>
-								<td>64</td>
-								<td>+</td>
-								<td>32</td>
-								<td>+</td>
-								<td>1</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>=</td>
-								<td>1·8<sup>2</sup></td>
-								<td>+</td>
-								<td>4·8<sup>1</sup></td>
-								<td>+</td>
-								<td>1·8<sup>0</sup></td>
-								<td>=</td>
-								<td>141<sub>8</sub></td>
-							</tr>
-						</tbody>
-					</table>
-					<table class="center">
-						<tbody>
-							<tr>
-								<td>269<sub>10</sub></td>
-								<td>=</td>
-								<td>256</td>
-								<td>+</td>
-								<td></td>
-								<td></td>
-								<td>13</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>=</td>
-								<td>1·16<sup>2</sup></td>
-								<td>+</td>
-								<td></td>
-								<td></td>
-								<td>13·16<sup>0</sup></td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>=</td>
-								<td>1·16<sup>2</sup></td>
-								<td>+</td>
-								<td>0·16<sup>1</sup></td>
-								<td>+</td>
-								<td>13·16<sup>0</sup></td>
-								<td>=</td>
-								<td>10D<sub>16</sub></td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="scroll">
+						<table class="center">
+							<tbody>
+								<tr>
+									<td>97<sub>10</sub></td>
+									<td>=</td>
+									<td>64</td>
+									<td>+</td>
+									<td>33</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>=</td>
+									<td>64</td>
+									<td>+</td>
+									<td>32</td>
+									<td>+</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>=</td>
+									<td>1·8<sup>2</sup></td>
+									<td>+</td>
+									<td>4·8<sup>1</sup></td>
+									<td>+</td>
+									<td>1·8<sup>0</sup></td>
+									<td>=</td>
+									<td>141<sub>8</sub></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="scroll">
+						<table class="center">
+							<tbody>
+								<tr>
+									<td>269<sub>10</sub></td>
+									<td>=</td>
+									<td>256</td>
+									<td>+</td>
+									<td></td>
+									<td></td>
+									<td>13</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>=</td>
+									<td>1·16<sup>2</sup></td>
+									<td>+</td>
+									<td></td>
+									<td></td>
+									<td>13·16<sup>0</sup></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>=</td>
+									<td>1·16<sup>2</sup></td>
+									<td>+</td>
+									<td>0·16<sup>1</sup></td>
+									<td>+</td>
+									<td>13·16<sup>0</sup></td>
+									<td>=</td>
+									<td>10D<sub>16</sub></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 				<div class="example">
 					<h4>
@@ -491,76 +513,80 @@ I sistemi di numerazione principalmente utilizzati attualmente sono sistemi di n
 					<p>
 						Consideriamo il numero 631<sub>8</sub>:
 					</p>
-					<table class="center conversion toten">
-						<tbody>
-							<tr>
-								<td>8</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td>6</td>
-								<td>6</td>
-								<td>=</td>
-								<td>0·8</td>
-								<td>+</td>
-								<td>6</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>51</td>
-								<td>=</td>
-								<td>6·8</td>
-								<td>+</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>1</td>
-								<td>409</td>
-								<td>=</td>
-								<td>51·8</td>
-								<td>+</td>
-								<td>1</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="scroll">
+						<table class="center conversion toten">
+							<tbody>
+								<tr>
+									<td>8</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>6</td>
+									<td>=</td>
+									<td>0·8</td>
+									<td>+</td>
+									<td>6</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>51</td>
+									<td>=</td>
+									<td>6·8</td>
+									<td>+</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>409</td>
+									<td>=</td>
+									<td>51·8</td>
+									<td>+</td>
+									<td>1</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 					<p>
 						La sua conversione in decimale è 409<sub>10</sub>.
 					</p>
 					<p>
 						Consideriamo il numero 1A4<sub>16</sub>:
 					</p>
-					<table class="center conversion toten">
-						<tbody>
-							<tr>
-								<td>16</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td>1</td>
-								<td>1</td>
-								<td>= </td>
-								<td>0·16 </td>
-								<td>+ </td>
-								<td>1</td>
-							</tr>
-							<tr>
-								<td>A</td>
-								<td>26</td>
-								<td>=</td>
-								<td>1·16</td>
-								<td>+</td>
-								<td>10 (A)</td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td>420</td>
-								<td>=</td>
-								<td>26·16</td>
-								<td>+</td>
-								<td>4</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="scroll">
+						<table class="center conversion toten">
+							<tbody>
+								<tr>
+									<td>16</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>1</td>
+									<td>= </td>
+									<td>0·16 </td>
+									<td>+ </td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>A</td>
+									<td>26</td>
+									<td>=</td>
+									<td>1·16</td>
+									<td>+</td>
+									<td>10 (A)</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>420</td>
+									<td>=</td>
+									<td>26·16</td>
+									<td>+</td>
+									<td>4</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 					<p>
 						La sua conversione in decimale è 420<sub>10</sub>.
 					</p>
@@ -572,64 +598,68 @@ I sistemi di numerazione principalmente utilizzati attualmente sono sistemi di n
 					<p>
 						Consideriamo il numero 175<sub>10</sub>:
 					</p>
-					<table class="center conversion fromten">
-						<tbody>
-							<tr>
-								<td>175</td>
-								<td>8</td>
-							</tr>
-							<tr>
-								<td>21</td>
-								<td>7</td>
-								<td>=</td>
-								<td>175/8</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>5</td>
-								<td>=</td>
-								<td>21/8</td>
-							</tr>
-							<tr>
-								<td>0</td>
-								<td>2</td>
-								<td>=</td>
-								<td>2/8</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="scroll">
+						<table class="center conversion fromten">
+							<tbody>
+								<tr>
+									<td>175</td>
+									<td>8</td>
+								</tr>
+								<tr>
+									<td>21</td>
+									<td>7</td>
+									<td>=</td>
+									<td>175/8</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>5</td>
+									<td>=</td>
+									<td>21/8</td>
+								</tr>
+								<tr>
+									<td>0</td>
+									<td>2</td>
+									<td>=</td>
+									<td>2/8</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 					<p>
 						La sua conversione in ottale è 257<sub>8</sub>.
 					</p>
 					<p>
 						Consideriamo il numero 625<sub>10</sub>:
 					</p>
-					<table class="center conversion fromten">
-						<tbody>
-							<tr>
-								<td>635</td>
-								<td>16</td>
-							</tr>
-							<tr>
-								<td>39</td>
-								<td>11(B)</td>
-								<td>=</td>
-								<td>635/16</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>7</td>
-								<td>=</td>
-								<td>39/16</td>
-							</tr>
-							<tr>
-								<td>0</td>
-								<td>2</td>
-								<td>=</td>
-								<td>2/16</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="scroll">
+						<table class="center conversion fromten">
+							<tbody>
+								<tr>
+									<td>635</td>
+									<td>16</td>
+								</tr>
+								<tr>
+									<td>39</td>
+									<td>11(B)</td>
+									<td>=</td>
+									<td>635/16</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>7</td>
+									<td>=</td>
+									<td>39/16</td>
+								</tr>
+								<tr>
+									<td>0</td>
+									<td>2</td>
+									<td>=</td>
+									<td>2/16</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 					<p>
 						La sua conversione in esadecimale è 27B<sub>16</sub>.
 					</p>
@@ -637,91 +667,93 @@ I sistemi di numerazione principalmente utilizzati attualmente sono sistemi di n
 				<p>
 					I metodi di conversione verso il sistema decimale però non sono il punto forte del sistema ottale ed esadecimale. Come già detto questi sistemi sono stati pensati per una conversione rapida verso il sistema binario. La scelta di basi come potenze di due è stata fatta infatti perchè tutte le potenze di due possono essere raccolte mediante potenze di otto o sedici, con una minima variazione. Osserviamo ad esempio una conversione rapida di 1010010<sub>2</sub> in esadecimale:
 				</p>
-				<table class="center">
-					<tbody>
-						<tr>
-							<td>101111010<sub>2</sub></td>
-							<td>=</td>
-							<td>1·2<sup>8</sup></td>
-							<td></td>
-							<td></td>
-							<td>+</td>
-							<td>0·2<sup>7</sup></td>
-							<td>+</td>
-							<td>1·2<sup>6</sup></td>
-							<td>+</td>
-							<td>1·2<sup>5</sup></td>
-							<td>+</td>
-							<td>1·2<sup>4</sup></td>
-							<td></td>
-							<td></td>
-							<td>+</td>
-							<td>1·2<sup>3</sup></td>
-							<td>+</td>
-							<td>0·2<sup>2</sup></td>
-							<td>+</td>
-							<td>1·2<sup>1</sup></td>
-							<td>+</td>
-							<td>0·2<sup>0</sup></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td>=</td>
-							<td>1</td>
-							<td>·</td>
-							<td>(2<sup>4</sup>)<sup>2</sup></td>
-							<td>+</td>
-							<td>(0·2<sup>3</sup></td>
-							<td>+</td>
-							<td>1·2<sup>2</sup></td>
-							<td>+</td>
-							<td>1·2<sup>1</sup></td>
-							<td>+</td>
-							<td>1·2<sup>0</sup>)</td>
-							<td>·</td>
-							<td>(2<sup>4</sup>)<sup>1</sup></td>
-							<td>+</td>
-							<td>(1·2<sup>3</sup></td>
-							<td>+</td>
-							<td>0·2<sup>2</sup></td>
-							<td>+</td>
-							<td>1·2<sup>1</sup></td>
-							<td>+</td>
-							<td>0·2<sup>0</sup>)</td>
-							<td>·</td>
-							<td>(2<sup>4</sup>)<sup>0</sup></td>
-						</tr>
-						<tr>
-							<td></td>
-							<td>=</td>
-							<td>1</td>
-							<td>·</td>
-							<td>16<sup>2</sup></td>
-							<td>+</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td>7</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td>·</td>
-							<td>16<sup>1</sup></td>
-							<td>+</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td>10</td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td>·</td>
-							<td>16<sup>0</sup></td>
-							<td>=</td>
-							<td>17A<sub>16</sub></td>
-						</tr>
-					</tbody>
-				</table>
+				<div class="scroll">
+					<table class="center">
+						<tbody>
+							<tr>
+								<td>101111010<sub>2</sub></td>
+								<td>=</td>
+								<td>1·2<sup>8</sup></td>
+								<td></td>
+								<td></td>
+								<td>+</td>
+								<td>0·2<sup>7</sup></td>
+								<td>+</td>
+								<td>1·2<sup>6</sup></td>
+								<td>+</td>
+								<td>1·2<sup>5</sup></td>
+								<td>+</td>
+								<td>1·2<sup>4</sup></td>
+								<td></td>
+								<td></td>
+								<td>+</td>
+								<td>1·2<sup>3</sup></td>
+								<td>+</td>
+								<td>0·2<sup>2</sup></td>
+								<td>+</td>
+								<td>1·2<sup>1</sup></td>
+								<td>+</td>
+								<td>0·2<sup>0</sup></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>=</td>
+								<td>1</td>
+								<td>·</td>
+								<td>(2<sup>4</sup>)<sup>2</sup></td>
+								<td>+</td>
+								<td>(0·2<sup>3</sup></td>
+								<td>+</td>
+								<td>1·2<sup>2</sup></td>
+								<td>+</td>
+								<td>1·2<sup>1</sup></td>
+								<td>+</td>
+								<td>1·2<sup>0</sup>)</td>
+								<td>·</td>
+								<td>(2<sup>4</sup>)<sup>1</sup></td>
+								<td>+</td>
+								<td>(1·2<sup>3</sup></td>
+								<td>+</td>
+								<td>0·2<sup>2</sup></td>
+								<td>+</td>
+								<td>1·2<sup>1</sup></td>
+								<td>+</td>
+								<td>0·2<sup>0</sup>)</td>
+								<td>·</td>
+								<td>(2<sup>4</sup>)<sup>0</sup></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>=</td>
+								<td>1</td>
+								<td>·</td>
+								<td>16<sup>2</sup></td>
+								<td>+</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>7</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>·</td>
+								<td>16<sup>1</sup></td>
+								<td>+</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>10</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>·</td>
+								<td>16<sup>0</sup></td>
+								<td>=</td>
+								<td>17A<sub>16</sub></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 				<p>
 					Si nota facilmente che le cifre esadecimali corrispondono a gruppi di quattro cifre binarie (nibble). Per la conversione binario-ottale/esadecimale è sufficiente dunque associare ad ogni gruppo di tre(ottale)/quattro(esadecimale) cifre binarie una sola cifra ottale/esadecimale.
 				</p>
@@ -732,73 +764,76 @@ I sistemi di numerazione principalmente utilizzati attualmente sono sistemi di n
 					<p>
 						La conversione si effettua suddividendo il numero in gruppi di tre/quattro cifre e traducendo in decimale ogni gruppo, facendo corrispondere la cifra corretta nel sistema di destinazione:
 					</p>
-					<table class="center">
-						<tbody>
-							<tr>
-								<td>11111101001101011010101<sub>2</sub></td>
-								<td>=</td>
-								<td>11</td>
-								<td>111</td>
-								<td>101</td>
-								<td>001</td>
-								<td>101</td>
-								<td>011</td>
-								<td>010</td>
-								<td>101</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>=</td>
-								<td>3</td>
-								<td>7</td>
-								<td>5</td>
-								<td>1</td>
-								<td>5</td>
-								<td>3</td>
-								<td>2</td>
-								<td>5</td>
-								<td>=</td>
-								<td>375153258</td>
-							</tr>
-						</tbody>
-					</table>
-					<table class="center">
-						<tbody>
-							<tr>
-								<td>11111101001101011010101<sub>2</sub></td>
-								<td>=</td>
-								<td>111</td>
-								<td>1110</td>
-								<td>1001</td>
-								<td>1010</td>
-								<td>1101</td>
-								<td>0101</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>=</td>
-								<td>7</td>
-								<td>14</td>
-								<td>9</td>
-								<td>10</td>
-								<td>13</td>
-								<td>5</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>=</td>
-								<td>7</td>
-								<td>E</td>
-								<td>9</td>
-								<td>A</td>
-								<td>D</td>
-								<td>5</td>
-								<td>=</td>
-								<td>7E9AD5<sub>16</sub></td>
-							</tr>
-						</tbody>
-
-					</table>
+					<div class="scroll">
+						<table class="center">
+							<tbody>
+								<tr>
+									<td>11111101001101011010101<sub>2</sub></td>
+									<td>=</td>
+									<td>11</td>
+									<td>111</td>
+									<td>101</td>
+									<td>001</td>
+									<td>101</td>
+									<td>011</td>
+									<td>010</td>
+									<td>101</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>=</td>
+									<td>3</td>
+									<td>7</td>
+									<td>5</td>
+									<td>1</td>
+									<td>5</td>
+									<td>3</td>
+									<td>2</td>
+									<td>5</td>
+									<td>=</td>
+									<td>375153258</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="scroll">
+						<table class="center">
+							<tbody>
+								<tr>
+									<td>11111101001101011010101<sub>2</sub></td>
+									<td>=</td>
+									<td>111</td>
+									<td>1110</td>
+									<td>1001</td>
+									<td>1010</td>
+									<td>1101</td>
+									<td>0101</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>=</td>
+									<td>7</td>
+									<td>14</td>
+									<td>9</td>
+									<td>10</td>
+									<td>13</td>
+									<td>5</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>=</td>
+									<td>7</td>
+									<td>E</td>
+									<td>9</td>
+									<td>A</td>
+									<td>D</td>
+									<td>5</td>
+									<td>=</td>
+									<td>7E9AD5<sub>16</sub></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 				<div class="example">
 					<h4>
@@ -807,62 +842,66 @@ I sistemi di numerazione principalmente utilizzati attualmente sono sistemi di n
 					<p>
 						La conversione si effettua convertendo ogni cifra nel gruppo di tre/quattro cifre corrispondenti e unendo le sequenze ottenute; gli zeri iniziali possono essere omessi:
 					</p>
-					<table class="center">
-						<tbody>
-							<tr>
-								<td>13462057<sub>8</sub></td>
-								<td>=</td>
-								<td>1</td>
-								<td>3</td>
-								<td>4</td>
-								<td>6</td>
-								<td>2</td>
-								<td>0</td>
-								<td>5</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>=</td>
-								<td>001</td>
-								<td>011</td>
-								<td>100</td>
-								<td>110</td>
-								<td>010</td>
-								<td>000</td>
-								<td>101</td>
-								<td>111</td>
-								<td>=</td>
-								<td>1011100110010000101111<sub>2</sub></td>
-							</tr>
-						</tbody>
-					</table>
-					<table class="center">
-						<tbody>
-							<tr>
-								<td>25B3FC<sub>16</sub></td>
-								<td>=</td>
-								<td>2</td>
-								<td>5</td>
-								<td>B</td>
-								<td>3</td>
-								<td>F</td>
-								<td>C</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td>=</td>
-								<td>0010</td>
-								<td>0101</td>
-								<td>1011</td>
-								<td>0011</td>
-								<td>1111</td>
-								<td>1100</td>
-								<td>=</td>
-								<td>1001011011001111111100<sub>2</sub></td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="scroll">
+						<table class="center">
+							<tbody>
+								<tr>
+									<td>13462057<sub>8</sub></td>
+									<td>=</td>
+									<td>1</td>
+									<td>3</td>
+									<td>4</td>
+									<td>6</td>
+									<td>2</td>
+									<td>0</td>
+									<td>5</td>
+									<td>7</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>=</td>
+									<td>001</td>
+									<td>011</td>
+									<td>100</td>
+									<td>110</td>
+									<td>010</td>
+									<td>000</td>
+									<td>101</td>
+									<td>111</td>
+									<td>=</td>
+									<td>1011100110010000101111<sub>2</sub></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="scroll">
+						<table class="center">
+							<tbody>
+								<tr>
+									<td>25B3FC<sub>16</sub></td>
+									<td>=</td>
+									<td>2</td>
+									<td>5</td>
+									<td>B</td>
+									<td>3</td>
+									<td>F</td>
+									<td>C</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>=</td>
+									<td>0010</td>
+									<td>0101</td>
+									<td>1011</td>
+									<td>0011</td>
+									<td>1111</td>
+									<td>1100</td>
+									<td>=</td>
+									<td>1001011011001111111100<sub>2</sub></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</p>
 			</li>
 		</ol>
