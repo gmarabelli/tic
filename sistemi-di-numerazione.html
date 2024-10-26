@@ -904,6 +904,907 @@ I sistemi di numerazione principalmente utilizzati attualmente sono sistemi di n
 					</div>
 				</p>
 			</li>
+			<li>
+				<h2>Addizione su altre basi di numerazione</h2>
+				<p>
+					Come per il sistema decimale, anche per gli altri sistemi di numerazione valgono le regole che consentono le operazioni aritmetiche fondamentali.
+				</p>
+				<div class="example">
+					<h4>
+						Esempio - Consideriamo ad esempio un’addizione nel sistema decimale, 4405<sub>10</sub> + 6876<sub>10</sub>:
+					</h4>
+					<div class="scroll">
+						<table class="operation center">
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>1</td>
+									<td></td>
+									<td>1</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>4</td>
+									<td>4</td>
+									<td>0</td>
+									<td>5</td>
+									<td>+</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>6</td>
+									<td>8</td>
+									<td>7</td>
+									<td>6</td>
+									<td>=</td>
+								</tr>
+								<tr class="result">
+									<td>1</td>
+									<td>1</td>
+									<td>2</td>
+									<td>8</td>
+									<td>1</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<p>
+					Come è noto dalle conoscenze pregresse, il risultato è ottenuto sommando singolarmente le cifre corrispondenti, da destra a sinistra, scrivendo il valore dell’unità in basso e riportando le decine sopra le cifre successive, come riporto da considerare per il passaggio successivo.
+				</p>
+				<p>
+				Le stesse regole sono valide per svolgere le operazioni su altri sistemi di numerazione, ricordando che il valore della decina è proprio quello della base di numerazione scelta (10<sub>2</sub> = 2<sub>10</sub> , 10<sub>8</sub> = 8<sub>10</sub> , 10<sub>16</sub> = 16<sub>10</sub>). Ovvero, ogni volta che faccio la somma tra cifre dello stesso livello, se il risultato raggiunge o eccede la base devo riportare 1 e considerare solo di quanto supero la base: segnerò tale valore come cifra del risultato; se il risultato non raggiunge la base scriverò direttamente il valore come cifra nel risultato.
+				</p>
+				<div class="example">
+					<h4>
+						Esempio - somma in altri sistemi di numerazione:
+					</h4>
+					<p>
+						binario: 1011101<sub>2</sub> + 1101001<sub>2</sub>
+					</p>
+					<div class="scroll">
+						<table class="operation center">
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td></td>
+									<td></td>
+									<td>1</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
+									<td>+</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
+									<td>0</td>
+									<td>0</td>
+									<td>1</td>
+									<td>=</td>
+								</tr>
+								<tr class="result">
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p>
+						ottale: 54327<sub>8</sub> + 6412<sub>8</sub>
+					</p>
+					<div class="scroll">
+						<table class="operation center">
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td></td>
+									<td></td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>4</td>
+									<td>3</td>
+									<td>2</td>
+									<td>7</td>
+									<td>+</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>6</td>
+									<td>4</td>
+									<td>1</td>
+									<td>2</td>
+									<td>=</td>
+								</tr>
+								<tr class="result">
+									<td>6</td>
+									<td>2</td>
+									<td>7</td>
+									<td>4</td>
+									<td>1</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p>
+						esadecimale: 2DE3A<sub>16</sub> + 5F6B<sub>16</sub>
+					</p>
+					<div class="scroll">
+						<table class="operation center">
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>1</td>
+									<td></td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>D</td>
+									<td>E</td>
+									<td>3</td>
+									<td>A</td>
+									<td>+</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>5</td>
+									<td>F</td>
+									<td>6</td>
+									<td>B</td>
+									<td>=</td>
+								</tr>
+								<tr class="result">
+									<td>3</td>
+									<td>3</td>
+									<td>D</td>
+									<td>A</td>
+									<td>5</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p>
+					Spiegazione: Nella prima si parte da destra: 1 + 1 = 2<sub>10</sub> = 10<sub>2</sub> , ovvero segno 0 sotto alle unità e riporto 1; poi 1 + 0 + 0 = 1<sub>2</sub> cioè segno sotto 1, senza riporto; successivamente opero 1 + 0 = 1<sub>2</sub> cioè ancora segno 1 e non riporto nulla; al quarto passaggio 1 + 1 = 10<sub>2</sub> cioè segno 0 e riporto 1, e così via..
+				</p>
+					<p>
+					Nella seconda si parte da destra: 7 + 2 = 9<sub>10</sub> = 11<sub>8</sub> , ovvero segno 1 sotto alle unità e riporto 1; poi 1 + 2 + 1 = 4<sub>8</sub> cioè segno sotto 4, senza riporto; successivamente opero 3 + 4 = 7<sub>8</sub> cioè ancora segno 7 e non riporto nulla; al quarto passaggio 4 + 6 = 10<sub>10</sub> = 12<sub>8</sub> cioè segno 2 e riporto 1, e così via..
+					</p>
+					<p>
+					Nella terza si parte da destra: A + B = 10 + 11 = 21<sub>10</sub> = 15<sub>16</sub> , ovvero segno 5 sotto alle unità e riporto 1; poi 1 + 3 + 6 = 10<sub>10</sub> = A<sub>16</sub> cioè segno sotto A, senza riporto; successivamente opero E + F = 14 + 15 = 29<sub>10</sub> = 1D<sub>16</sub> cioè segno D e riporto 1; al quarto passaggio 1 + D + 5 = 19<sub>10</sub> = 13<sub>16</sub> cioè segno 3 e riporto 1, e così via..
+					</p>
+				</div>
+			</li>
+			<li>
+				<h2>Sottrazione su altre basi di numerazione</h2>
+				<p>
+					Per le sottrazioni si può invece procedere in due modi: il primo utilizza un metodo analogo a quello normalmente utilizzato per i calcoli in decimale; il secondo prende spunto dalla codifica dei numeri in macchina, riconducendo il tutto al caso dell’addizione.
+				</p>
+				<div class="example">
+					<h4>
+						Esempio - Metodo classico, sottrazione in decimale, 7923<sub>10</sub> - 6835<sub>10</sub>:
+					</h4>
+					<div class="scroll">
+						<table class="operation center">
+							<tbody>
+								<tr>
+									<td></td>
+									<td>8</td>
+									<td><sup>1</sup>1</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td><s>9</s></td>
+									<td><s>2</s></td>
+									<td><sup>1</sup>3</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>8</td>
+									<td>3</td>
+									<td>5</td>
+									<td>=</td>
+								</tr>
+								<tr class="result">
+									<td>1</td>
+									<td>0</td>
+									<td>8</td>
+									<td>8</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="scroll">
+						<table class="operation center">
+							<tbody>
+								<tr>
+									<td>7</td>
+									<td>9</td>
+									<td><sup>1</sup>2</td>
+									<td><sup>1</sup>3</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>8</td>
+									<td>3</td>
+									<td>5</td>
+									<td>=</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>1</td>
+									<td>1</td>
+								</tr>
+								<tr class="result">
+									<td>1</td>
+									<td>0</td>
+									<td>8</td>
+									<td>8</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p>
+						Per il metodo classico ho voluto considerare due modalità di riporto: una più simile a quella che avete già utilizzato alle scuole elementari e un’altra che rende conto del ruolo sottrattivo del riporto.
+					</p>
+					<p>
+						Nel primo caso, quando incontro una sottrazione tra le cifre che darebbe un risultato negativo, chiedo il riporto alla cifra a sinistra aggiungendolo alla cifra in alto, come decina, e togliendolo a quella a cui richiedo, come unità (nello schema ho infatti barrato la cifra e riportato quella precedente al di sopra). Se non potessi richiedere una unità alla cifra precedente (solo nel caso in cui si tratta di uno 0), chiedo ulteriormente il riporto a catena finché non trovo una cifra diversa da 0.
+					</p>
+					<p>
+						Nel secondo caso, invece, scrivo il riporto al di sotto del secondo numero per poterlo sommare alla cifra corrispondente del secondo numero: l’operazione da effettuare sarà quindi una sottrazione delle cifre inferiori da quella del primo numero.
+					</p>
+				</div>
+				<p>
+					Lo stesso approccio può essere utilizzato per gli altri sistemi di numerazione:
+				</p>
+				<div class="example">
+					<h4>
+						Esempio - sottrazione in altri sistemi di numerazione (metodo classico):
+					</h4>
+					<p>
+						binario: 11100101<sub>2</sub> - 1010110<sub>2</sub>
+					</p>
+					<div class="scroll">
+						<table class="operation center">
+							<tbody>
+								<tr>
+									<td></td>
+									<td></td>
+									<td>0</td>
+									<td>1</td>
+									<td>1</td>
+									<td><sup>1</sup>0</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>1</td>
+									<td><s>1</s></td>
+									<td><s><sup>1</sup>0</s></td>
+									<td><s><sup>1</sup>0</s></td>
+									<td><s>1</s></td>
+									<td><sup>1</sup>0</td>
+									<td>1</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+									<td>=</td>
+								</tr>
+								<tr class="result">
+									<td>1</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="scroll">
+						<table class="operation center">
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td><sup>1</sup>0</td>
+									<td><sup>1</sup>0</td>
+									<td><sup>1</sup>1</td>
+									<td><sup>1</sup>0</td>
+									<td>1</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+									<td>=</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+								</tr>
+								<tr class="result">
+									<td>1</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p>
+						ottale: 54327<sub>8</sub> - 46412<sub>8</sub>
+					</p>
+					<div class="scroll">
+						<table class="operation center">
+							<tbody>
+								<tr>
+									<td>4</td>
+									<td><sup>1</sup>3</td>
+									<td> </td>
+								</tr>
+								<tr>
+									<td><s>5</s></td>
+									<td><s>4</s></td>
+									<td><sup>1</sup>3</td>
+									<td>2</td>
+									<td>7</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>6</td>
+									<td>4</td>
+									<td>1</td>
+									<td>2</td>
+									<td>=</td>
+								</tr>
+								<tr class="result">
+									<td></td>
+									<td>5</td>
+									<td>7</td>
+									<td>1</td>
+									<td>5</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="scroll">
+						<table class="operation center">
+							<tbody>
+								<tr>
+									<td>5</td>
+									<td><sup>1</sup>4</td>
+									<td><sup>1</sup>3</td>
+									<td>2</td>
+									<td>7</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>6</td>
+									<td>4</td>
+									<td>1</td>
+									<td>2</td>
+									<td>=</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>1</td>
+								</tr>
+								<tr class="result">
+									<td> </td>
+									<td>5</td>
+									<td>7</td>
+									<td>1</td>
+									<td>5</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p>
+						esadecimale: 2DE3A<sub>16</sub> - 5F6B<sub>16</sub>
+					</p>
+					<div class="scroll">
+						<table class="operation center">
+							<tbody>
+								<tr>
+									<td></td>
+									<td>C</td>
+									<td><sup>1</sup>D</td>
+									<td><sup>1</sup>2</td>
+									<td> </td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td><s>D</s></td>
+									<td><s>E</s></td>
+									<td><s>3</s></td>
+									<td><sup>1</sup>A</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>5</td>
+									<td>F</td>
+									<td>6</td>
+									<td>B</td>
+									<td>=</td>
+								</tr>
+								<tr class="result">
+									<td>2</td>
+									<td>7</td>
+									<td>E</td>
+									<td>C</td>
+									<td>F</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="scroll">
+						<table class="operation center">
+							<tbody>
+								<tr>
+									<td>2</td>
+									<td>D</td>
+									<td><sup>1</sup>E</td>
+									<td><sup>1</sup>3</td>
+									<td><sup>1</sup>A</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>5</td>
+									<td>F</td>
+									<td>6</td>
+									<td>B</td>
+									<td>=</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+								</tr>
+								<tr class="result">
+									<td>2</td>
+									<td>7</td>
+									<td>E</td>
+									<td>C</td>
+									<td>F</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p>
+						Spiegazione: Nel binario si parte da destra: 1 - 0 = 1<sub>2</sub> , ovvero segno 1 sotto alle unità e non chiedo riporto; poi 0 - 1 = -1, ovvero chiedo riporto 1 (secondo i due casi considerati) e trasformo lo 0 in 10<sub>2</sub> , dunque posso fare 10<sub>2</sub> - 1<sub>2</sub> = 2 - 1 = 1<sub>2</sub> cioè segno sotto 1; successivamente i due casi cominciano a distinguersi. Nel primo devo fare 0 - 1, che non posso fare senza chiedere un prestito e trovando la fila di zeri devo trasformarli tutti in 1, fino al primo 1, che diventa 0. A questo punto posso procedere come sopra. Nel secondo caso devo fare 1 - 1 - 1 e richiedo il prestito segnandolo a fianco della prima cifra e in sottrazione alla colonna successiva, e così via..
+					</p>
+					<p>
+						Nell’ottale si parte da destra: 7 - 2 = 5<sub>8</sub> , ovvero segno 5 sotto alle unità, senza riporto; poi 2 - 1 = 1<sub>8</sub> cioè segno sotto 1, ancora senza riporto; successivamente devo effettuare 3 - 4, per il quale è necessario un prestito che riporto a fianco del 3, facendolo diventare 13<sub>8</sub> = 11<sub>10</sub> e, secondo il caso, sottraggo alla cifra a sinistra o segno al di sotto per poterlo successivamente sottrarre, posso quindi procedere ad effettuare 13<sub>8</sub> - 4<sub>8</sub> = 11<sub>10</sub> - 4<sub>10</sub> = 7<sub>10</sub> = 7<sub>8</sub>. Nel primo caso dovrò quindi fare 3 - 6, mentre nel secondo devo fare 4 - 6 - 1, entrambi casi che richiedono un prestito, e così via..
+					</p>
+					<p>
+						Nella terza si parte da destra: A - B non è possibile senza prestito, quindi lo segno in fianco alla A, e, secondo il caso, lo sottraggo al 3 a fianco o lo segno al di sotto per sottrarlo successivamente; posso quindi procedere a svolgere 1A<sub>16</sub> - B<sub>16</sub> = 26<sub>10</sub> - 11<sub>16</sub> = 15<sub>10</sub> = F<sub>16</sub> , ovvero segno F come cifra del risultato; poi devo effettuare 2 - 6 o 3 - 6 - 1, secondo il caso e procedo a richiedere un prestito alla cifra successiva: segno il prestito a fianco del 2/3 e, come prima, lo sottraggo alla cifra successiva o ve lo segno al di sotto; procedo quindi ad effettuare 12<sub>16</sub> - 6<sub>16</sub> oppure 13<sub>16</sub> - 6<sub>16</sub> - 1<sub>16</sub> , entrambi pari a 12<sub>10</sub> = C1<sub>6</sub> cioè segno sotto C, e così via..
+					</p>
+				</div>
+			</li>
+			<li>
+				<h2>Sottrazione mediante complemento alla base</h2>
+				<p>
+					Un metodo alternativo, basato sulla codifica in macchina, considera la possibilità di scrivere i numeri “negativi”, utilizzando la cifra più a sinistra come indicativa del segno. Il caso binario è il più semplice: per cambiare di segno un numero posso, partendo da destra, riscrivere ciascuna cifra finchè non trovo il primo 1, che ricopio anch’esso, dopodichè scrivo per ogni cifra il suo complementare a 1, scrivo 1 quando trovo uno 0 e viceversa. Poiché la rappresentazione di un numero può avere a sinistra un numero di 0 a piacere, dovrò quindi scegliere, secondo necessità quante cifre utilizzare.
+				</p>
+				<div class="example">
+					<h4>
+						Esempio - cambio segno di un numero binario in complemento a due
+					</h4>
+					<p>
+						Per il numero 104<sub>10</sub> = 1101000<sub>2</sub> , il corrispondente a -104<sub>10</sub>:
+					</p>
+					<div class="scroll">
+						<table class="complement center">
+							<tbody>
+								<colgroup>
+									<col span="5"/>
+									<col class="base"/>
+								</colgroup>
+								<tr>
+									<td>0</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>0</td>
+									<td>0</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p>
+						N.B.: Il fatto di considerare 8 bit è stata una scelta, che rende disponibile la cifra iniziale come indicatore del segno: 0 designa un numero positivo e 1 ne designa uno negativo
+					</p>
+				</div>
+				<p>
+					Per le altre basi di numerazione il metodo è simile: gli zeri a destra vengono copiati, la prima cifra da destra diversa da 0 è complementata alla base, ovvero scrivo quella cifra con cui, sommata, restituisce la base stessa, e successivamente complemento ciascuna cifra alla base, ridotta di 1.
+				</p>
+				<div class="example">
+					<h4>
+						Esempio - cambio segno di un numero in complemento alla base
+					</h4>
+					<p>
+						ottale: 2701500<sub>8</sub>
+					</p>
+					<div class="scroll">
+						<table class="complement center">
+							<tbody>
+								<colgroup>
+									<col span="6"/>
+									<col class="base"/>
+								</colgroup>
+								<tr>
+									<td>0</td>
+									<td>2</td>
+									<td>7</td>
+									<td>0</td>
+									<td>1</td>
+									<td>5</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>5</td>
+									<td>0</td>
+									<td>7</td>
+									<td>6</td>
+									<td>3</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p>
+						esadecimale: 36D7A00<sub>16</sub>
+					</p>
+					<div class="scroll">
+						<table class="complement center">
+							<tbody>
+								<colgroup>
+									<col span="5"/>
+									<col class="base"/>
+								</colgroup>
+								<tr>
+									<td>0</td>
+									<td>3</td>
+									<td>6</td>
+									<td>D</td>
+									<td>7</td>
+									<td>A</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>F</td>
+									<td>C</td>
+									<td>9</td>
+									<td>2</td>
+									<td>8</td>
+									<td>6</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p>
+						N.B.: Il fatto di considerare 8 cifre è stata una scelta, che rende disponibile la cifra iniziale come indicatore del segno: 0 designa un numero positivo e 7/F ne designa uno negativo
+					</p>
+				</div>
+				<p>
+					Una volta chiarita questa operazione, posso procedere ad esporre il metodo per complemento, in maniera completa.
+				</p>
+				<p>
+					La procedura comincia dapprima con il cambio di segno del minuendo (secondo membro della sottrazione), fornendo ad esso un numero cifre pari ad almeno una in più del sottraendo (primo membro), poi si esegue la somma tra sottraendo e minuendo cambiato di segno e infine si scartano eventuali cifre eccedenti quelle considerate per il cambio di segno: se considerate porterebbero ad un risultato errato.
+				</p>
+				<p>
+					In questo modo posso trasformare una sottrazione in una più semplice addizione, risparmiando la complicazione di richiedere unità alla cifra successiva. Questo è anche il metodo alla base dei circuiti di calcolo presenti all’interno del computer. Infatti è più semplice trattare con un riporto, invece che con un prestito, che influenza direttamente le cifre ancora da operare.
+				</p>
+				<div class="example">
+					<h4>
+						Esempio - sottrazione in altri sistemi di numerazione (metodo per complemento):
+					</h4>
+					<p>
+						binario: 11100101<sub>2</sub> - 1010110<sub>2</sub>
+					</p>
+					<div class="scroll">
+						<table class="complement center">
+							<tbody>
+								<colgroup>
+									<col span="7"/>
+									<col class="base"/>
+								</colgroup>
+								<tr>
+									<td>0</td>
+									<td>0</td>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
+									<td>0</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="scroll">
+						<table class="operation center">
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+									<td>0</td>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
+									<td>+</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
+									<td>0</td>
+									<td>=</td>
+								</tr>
+								<tr class="result">
+									<td><s>1</s></td>
+									<td>0</td>
+									<td>1</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p>
+						ottale: 54327<sub>8</sub> - 46412<sub>8</sub>
+					</p>
+					<div class="scroll">
+						<table class="complement center">
+							<tbody>
+								<colgroup>
+									<col span="5"/>
+									<col class="base"/>
+								</colgroup>
+								<tr>
+									<td>0</td>
+									<td>4</td>
+									<td>6</td>
+									<td>4</td>
+									<td>1</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>3</td>
+									<td>1</td>
+									<td>3</td>
+									<td>6</td>
+									<td>6</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="scroll">
+						<table class="operation center">
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>1</td>
+									<td></td>
+									<td></td>
+									<td>1</td>
+									<td>1</td>
+									<td> </td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td>5</td>
+									<td>4</td>
+									<td>3</td>
+									<td>2</td>
+									<td>7</td>
+									<td>+</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>7</td>
+									<td>3</td>
+									<td>1</td>
+									<td>3</td>
+									<td>6</td>
+									<td>6</td>
+									<td>=</td>
+								</tr>
+								<tr class="result">
+									<td><s>1</s></td>
+									<td>0</td>
+									<td>0</td>
+									<td>5</td>
+									<td>7</td>
+									<td>1</td>
+									<td>5</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p>
+						esadecimale: 2DE3A<sub>16</sub> - 5F6B<sub>16</sub>
+					</p>
+					<div class="scroll">
+						<table class="complement center">
+							<tbody>
+								<colgroup>
+									<col span="5"/>
+									<col class="base"/>
+								</colgroup>
+								<tr>
+									<td>0</td>
+									<td>0</td>
+									<td>5</td>
+									<td>F</td>
+									<td>6</td>
+									<td>B</td>
+								</tr>
+								<tr>
+									<td>F</td>
+									<td>F</td>
+									<td>A</td>
+									<td>0</td>
+									<td>9</td>
+									<td>5</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="scroll">
+						<table class="operation center">
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td>2</td>
+									<td>D</td>
+									<td>E</td>
+									<td>3</td>
+									<td>A</td>
+									<td>+</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>F</td>
+									<td>F</td>
+									<td>A</td>
+									<td>0</td>
+									<td>9</td>
+									<td>5</td>
+									<td>=</td>
+								</tr>
+								<tr class="result">
+									<td><s>1</s></td>
+									<td>0</td>
+									<td>2</td>
+									<td>7</td>
+									<td>E</td>
+									<td>C</td>
+									<td>F</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</li>
 		</ol>
 	</body>
 </html>

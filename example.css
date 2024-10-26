@@ -16,10 +16,12 @@
 }
 
 .operation .result{
-	border: 0.1rem 0 solid #000;
+	border-top: 0.15rem solid #000;
+	border-bottom: 0.15rem solid #000;
 }
 
-.conversion{
+.conversion,
+.complement{
 	border-collapse: collapse;
 }
 
@@ -37,4 +39,8 @@ td{
 
 .conversion.fromten tr:first-child td:nth-child(2){
 	border-bottom: 0.15rem solid #000;
+}
+
+.complement .base{
+	border-left: 0.15rem solid #000;
 }
